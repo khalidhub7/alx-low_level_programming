@@ -1,11 +1,11 @@
 includ < stdio.h >
 
 /**
- *main -entry point
+ *main -Entry point
  *
- *description: a C program prints with put function
+ *Description: a C program prints with put function
  *
- *return: always 0 (success)
+ *Return: Always 0 (Success)
 */
 
 int main(void)
