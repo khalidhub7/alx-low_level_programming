@@ -2,9 +2,9 @@
 
 /**
  * main -entry point
- *
  * Description: print all possible
- * Return: 0 (success)
+ * different combinations of two digits
+ * Return: 0
 */
 
 int main(void)
