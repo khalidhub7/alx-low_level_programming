@@ -5,7 +5,7 @@
  *
  * Description: print all alphabet except q and e
  *
- * Return 0 (success)
+ * Return: 0 (success)
 */
 
 int main(void)
@@ -14,8 +14,8 @@ int main(void)
 
 	while (ch <= 'z')
 	{
-		 if (ch == 'e' || ch == 'q')
-			 ch++
+		if (ch == 'e' || ch == 'q')
+			ch++;
 		putchar(ch);
 		ch++;
 	}
