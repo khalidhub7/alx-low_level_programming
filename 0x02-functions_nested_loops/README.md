@@ -1,1 +1,1 @@
-my redmi 9
+0x02. C - Functions, nested loops
