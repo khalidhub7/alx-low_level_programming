@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define main
 
 /**
  * main - print name of source file
