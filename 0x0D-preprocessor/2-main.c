@@ -1,8 +1,14 @@
 #include <stdio.h>
 #define main
 
-int main()
+/**
+ * main - print name of source file
+ *
+ * Return: Always 0
+*/
+
+int main(void)
 {
-	print("%d\n", __FILE__ );
-	return 0;
+	print("%s\n", __FILE__);
+	return (0);
 }
