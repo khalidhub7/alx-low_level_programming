@@ -3,8 +3,8 @@
 /**
  * main - print name of source file
  *
- * Return: Always 0
-*/
+ * Return: Always 0.
+ */
 
 int main(void)
 {
