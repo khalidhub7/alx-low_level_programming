@@ -18,7 +18,7 @@ int main(void)
 
 		/* after 9 we jump till 96; */
 		if (digit == 57)
-			digit += 39;
+			digit += 39; /*jump(n9z) b 39 mra f ascii ok)*/
 		digit++;
 	}
 	putchar('\n');
