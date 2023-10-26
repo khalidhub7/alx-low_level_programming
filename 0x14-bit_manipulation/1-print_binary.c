@@ -2,15 +2,26 @@
 
 /**
  * print_binary -  prints the binary representation of a number.
- * @n; num
- * Return: binary num
+ *
+ * @n: num to print
+ *
+ * Return: void
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int u = 0;
+	int u = sizeof(n) * 8;
+	int x = 0;
 
-	while (n)
+	while (u)
 	{
-		printf("%u", n >> 0);
+		if (n & 1L << --u)
+		{
+			_putchar('1');
+			x++;
+		}
+		else if (x)
+			_putchar('0');
 	}
+	if (!x)
+		_putchar('0');
 }
