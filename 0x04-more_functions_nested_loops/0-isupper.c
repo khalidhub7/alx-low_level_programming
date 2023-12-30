@@ -13,8 +13,9 @@ int _isupper(int c)
 	int sec = 'Z';
 
 	if (c >= fir && sec >= c)
+	{
 		return (1);
-	break;
+	}
 	else
 	{
 		return (0);
