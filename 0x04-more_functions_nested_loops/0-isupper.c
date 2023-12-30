@@ -11,10 +11,12 @@ int _isupper(int c)
 {
 	int fir = 'A';
 	int sec = 'Z';
+
 	if (c >= fir && sec >= c)
-		return 1;
+		return (1);
+	break;
 	else
 	{
-		return 0;
+		return (0);
 	}
 }
