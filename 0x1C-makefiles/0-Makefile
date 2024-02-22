@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 SRCS := $(wildcard *.c)
 BINS := $(SRCS:%.c=%)
 CC = gcc
