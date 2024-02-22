@@ -5,6 +5,6 @@ BINS := $(SRCS:%.c=%)
 CC = gcc
 
 all: ${BINS}
-
-${BINS}: ${SRCS}
-        ${CC} $< -o $@
+#${BINS}: ${SRCS}
+${BINS}: %: %.c
+    ${CC} $< -o $@
