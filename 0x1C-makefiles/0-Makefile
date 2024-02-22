@@ -1,8 +1,2 @@
-#!/usr/bin/env bash
-
-SRCS := $(wildcard *.c)
-BINS := $(SRCS:%.c=%)
-CC = gcc
-
-${BINS}: ${SRCS}
-        ${CC} $< -o $@
+all: main.c school.c
+        gcc main.c school.c -o school
