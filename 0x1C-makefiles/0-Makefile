@@ -5,5 +5,8 @@ BINS := $(SRCS:%.c=%)
 CC = gcc
 
 
-school: %.c
-	${CC} $< -o $@
+#school: %.c
+#	${CC} $< -o $@
+
+all: main.c school.c
+        ${CC} main.c school.c -o school
