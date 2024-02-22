@@ -4,7 +4,6 @@ SRCS := $(wildcard *.c)
 BINS := $(SRCS:%.c=%)
 CC = gcc
 
-all: school
 
 school: %.c
 	${CC} $< -o $@
