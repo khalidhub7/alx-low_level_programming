@@ -1,2 +1,2 @@
 all: main.c school.c
-	gcc $< $<+1 -o school
+	gcc $^ -o school
