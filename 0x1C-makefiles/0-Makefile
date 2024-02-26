@@ -1,9 +1,2 @@
 all: main.c school.c
-        gcc main.c school.c -o school
-
-#SRCS := $(wildcard *.c)
-#BINS := $(SRCS:%.c=%)
-#CC = gcc
-#all: ${BINS}
-#${BINS}: %: %.c
-#    ${CC} $< -o $@
+	gcc main.c school.c -o school
