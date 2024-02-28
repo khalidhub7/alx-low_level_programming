@@ -1,0 +1,20 @@
+# variables
+CC=gcc
+SRC=main.c school.c
+OBJ=$(SRC:.c=.o)
+NAME=school
+RM=rm
+# rules
+all: clean oclean fclean re
+
+clean: $(find . -type f \( -name '*~' -o -name '.*.sw?' \) -delete)
+	$(RM) $^
+
+oclean: $(OBJ)
+	$(RM) $^
+
+fclean: clean oclean
+	$(RM) school
+
+re: $(SRC)
+	$(CC) $^ -o $(NAME)
