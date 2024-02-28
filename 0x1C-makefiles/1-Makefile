@@ -1,4 +1,4 @@
 CC = gcc
 SRC = $(wildcard ./*.c)
 all: $(SRCS)
-       $@ $< -o school
+	$(CC) $< -o school
