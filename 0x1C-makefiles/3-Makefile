@@ -7,8 +7,8 @@ RM=rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-clean: $(find . -type f \( -name '*~' -o -name '.*.sw?' \) -delete)
-	$(RM) $^
+clean:
+	$(RM) $(find . -type f \( -name '*~' -o -name '.*.sw?' \) -delete)
 
 oclean:
 	$(RM) $(OBJ)
