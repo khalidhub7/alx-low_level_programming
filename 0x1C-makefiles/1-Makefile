@@ -1,6 +1,5 @@
 CC = gcc
-C_FILES := $(wildcard *.c)
-SRC := $(filter main.c school.c,$(C_FILES))
+SRC := $(filter main.c school.c,$$((wildcard *.c)))
 
 all: $(SRC)
     $(CC) $(SRC) -o school
