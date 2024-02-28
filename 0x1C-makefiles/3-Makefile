@@ -10,10 +10,9 @@ all: $(OBJ)
 clean: $(find . -type f \( -name '*~' -o -name '.*.sw?' \) -delete)
 	$(RM) $^
 
-oclean: $(OBJ)
-	$(RM) $^
+oclean:
+	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) school
 
 re: fclean all
