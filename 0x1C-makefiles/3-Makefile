@@ -8,7 +8,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) $(find . -type f -name 'school.*.sw?' -delete)
+	$(RM) $(find . -type f -name 'school.*.sw?' -delete) $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
