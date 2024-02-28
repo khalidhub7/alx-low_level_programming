@@ -3,17 +3,17 @@ CC=gcc
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
-RM=rm
-CFLAGS = -Wall -Werror -Wextra -pedantic
+RM=rm -f
+CFLAGS=-Wall -Werror -Wextra -pedantic
 # rules
 all: $(OBJ)
         $(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) -f *~ $(NAME) # -f is option to remove temp files
+	$(RM) *~ $(NAME) # -f is option to remove temp files
 
 oclean:
-	$(RM) -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
