@@ -4,7 +4,8 @@ OBJ=$(SRC:.c=.o)
 NAME=school
 RM=rm
 
-all: clean oclean fclean re
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean: $(find . -type f \( -name '*~' -o -name '.*.sw?' \) -delete)
 	$(RM) $^
@@ -15,5 +16,4 @@ oclean: $(OBJ)
 fclean: clean oclean
 	$(RM) school
 
-re: $(SRC)
-	$(CC) $^ -o $(NAME)
+re: fclean all
