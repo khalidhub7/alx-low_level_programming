@@ -1,14 +1,15 @@
+# variables
 CC=gcc
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
 RM=rm
-
+# rules
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) -f *~ $(NAME)
+	$(RM) -f *~ $(NAME) # -f is option to remove temp files
 
 oclean:
 	$(RM) -f $(OBJ)
