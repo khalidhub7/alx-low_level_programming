@@ -3,9 +3,9 @@
 
 /**
  * struct dog - basic dog info
- * name: 1st member
- * age: 2nd member
- * owner: 3rd member
+ * @name: 1st member
+ * @age: 2nd member
+ * @owner: 3rd member
  * Description: Longer description
 */
 struct dog {
