@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "dog.h"
+
 /**
  * new_dog - creates a new dog
  * @name: dog's name
@@ -9,8 +10,9 @@
  * @owner: dog's owner
  * Return: buff_dog
  */
-/* Function to create a new dog */
+
 dog_t *new_dog(char *name, float age, char *owner)
+/* Function to create a new dog */
 {
     /* Allocate memory for a new dog */
 	dog_t *new_dog_ptr = malloc(sizeof(dog_t));
