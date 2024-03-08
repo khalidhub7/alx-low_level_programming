@@ -24,12 +24,12 @@ dog_t *new_dog(char *name, float age, char *owner)
         }
 
     /* Allocate memory for name and owner strings */
-    new_dog_ptr->name = malloc(_strlen(name) + 1);
-    new_dog_ptr->owner = malloc(_strlen(owner) + 1);
+    new_dog_ptr->name = malloc(strlen(name) + 1);
+    new_dog_ptr->owner = malloc(strlen(owner) + 1);
 
     /* Copy name and owner strings */
-    _strcpy(new_dog_ptr->name, name);
-    _strcpy(new_dog_ptr->owner, owner);
+    strcpy(new_dog_ptr->name, name);
+    strcpy(new_dog_ptr->owner, owner);
 
     /* Set the age of the new dog */
     new_dog_ptr->age = age;
