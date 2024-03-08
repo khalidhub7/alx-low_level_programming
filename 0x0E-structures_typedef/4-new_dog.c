@@ -35,20 +35,3 @@ dog_t *new_dog(char *name, float age, char *owner) {
     
     return new_dog_ptr; // Return a pointer to the new dog
 }
-
-int main() {
-    // Example usage of new_dog function
-    dog_t *my_dog = new_dog("Buddy", 3.5, "John");
-    if (my_dog == NULL) {
-        printf("Failed to create a new dog.\n");
-    } else {
-        printf("New dog created: %s, %.1f years old, owned by %s\n", my_dog->name, my_dog->age, my_dog->owner);
-    }
-
-    // Remember to free memory allocated for the dog
-    free(my_dog->name);
-    free(my_dog->owner);
-    free(my_dog);
-    
-    return 0;
-}
