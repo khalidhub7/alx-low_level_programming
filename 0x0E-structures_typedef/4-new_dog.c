@@ -16,7 +16,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (new_dog_ptr == NULL)
 	{
-		return NULL; /* Return NULL if allocation failed */
+		return (NULL); /* Return NULL if allocation failed */
 	}
 
 	new_dog_ptr->name = malloc(strlen(name) + 1);
@@ -29,12 +29,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog_ptr->name);
 		free(new_dog_ptr->owner);
 		free(new_dog_ptr);
-		return NULL;
+		return (NULL);
 	}
 
 	strcpy(new_dog_ptr->name, name);
 	strcpy(new_dog_ptr->owner, owner);
 	new_dog_ptr->age = age;
 
-	return new_dog_ptr;
+	return (new_dog_ptr);
 }
