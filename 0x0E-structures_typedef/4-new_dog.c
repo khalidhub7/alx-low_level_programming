@@ -24,7 +24,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (new_dog_ptr->name == NULL || new_dog_ptr->owner == NULL)
 	{
-        /* Free memory and return NULL if allocation failed */
+		/* Free memory and return NULL if allocation failed */
 
 		free(new_dog_ptr->name);
 		free(new_dog_ptr->owner);
