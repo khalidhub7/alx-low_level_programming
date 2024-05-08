@@ -1,10 +1,10 @@
 #include "search_algos.h"
 
 /**
- * linear_search - linear     shearch
- * @array: list
- * @size: size OF _list
- * @value: the value to find
+ * linear_search - shearch using linear
+ * @array: the list
+ * @size: the size of the list
+ * @value: the value looking for
  * Return: the index if success -1 when failed
  */
 int linear_search(int *array, size_t size, int value)

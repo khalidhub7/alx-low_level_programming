@@ -1,1 +1,1 @@
-search_algorithms
+search     algorithms
