@@ -1,1 +1,1 @@
-my redmi first day c
+hello_world
