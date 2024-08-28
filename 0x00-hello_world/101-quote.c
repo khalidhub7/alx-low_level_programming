@@ -11,3 +11,4 @@ int main(void)
 	write(2, text, sizeof(text) - 1);
 	return (1);
 }
+
