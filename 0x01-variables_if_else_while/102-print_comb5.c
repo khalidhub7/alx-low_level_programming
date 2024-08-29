@@ -7,38 +7,25 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int a = 48;
-	int b, c, d;
-	int first = 1;
+	int a = 0;
+	int b;
 
-	while (a <= 57)
+	while (a < 100)
 	{
-		b = a;
-		while (b <= 57)
+		b = a + 1;
+		while (b < 100)
 		{
-			c = a;
-			while (c <= 57)
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
+			putchar(' ');
+			putchar((b / 10) + '0');
+			putchar((b % 10) + '0');
+			if (a != 98 || b != 99)
 			{
-				d = (c == a) ? (b + 1) : a;
-				while (d <= 57)
-				{
-					if (!first)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					putchar(a);
-					putchar(b);
-					putchar(' ');
-					putchar(c);
-					putchar(d);
-					first = 0;
-					d++;
-				}
-				c++;
+				putchar(',');
+				putchar(' ');
 			}
 			b++;
 		}
@@ -47,3 +34,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
