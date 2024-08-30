@@ -9,21 +9,27 @@
  */
 int main(void)
 {
-	int i, j;
+	int a, b, c, d;
 
-	for (i = 0; i < 100; i++)
+	for (a = 48; a < 58; a++)
 	{
-		for (j = i + 1; j < 100; j++)
+		for (b = 48; b < 58; b++)
 		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
-			if (i != 98 || j != 99)
+			for (c = a; c < 58; c++)
 			{
-				putchar(',');
-				putchar(' ');
+				for (d = (c == a ? b + 1 : 48); d < 58; d++)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(' ');
+					putchar(c);
+					putchar(d);
+					if (!(a == 57 && b == 56 && c == 57 && d == 57))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}
