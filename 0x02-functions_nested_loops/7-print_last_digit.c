@@ -14,7 +14,7 @@ int print_last_digit(int n)
 
 	if (n == INT_MIN)
 	{
-		last = (INT_MIN % 10 + 10) % 10;
+		last = 8;
 	}
 	else if (n < 0)
 	{
