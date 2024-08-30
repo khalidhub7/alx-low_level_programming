@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int a, b, c;
 
 	for (a = 48; a < 58; a++)
 	{
@@ -38,4 +38,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
