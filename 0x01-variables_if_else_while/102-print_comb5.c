@@ -19,7 +19,6 @@ int main(void)
 			{
 				for (d = 48; d < 58; d++)
 				{
-
 					putchar(a);
 					putchar(b);
 					putchar(' ');
@@ -30,7 +29,7 @@ int main(void)
 						putchar('\n');
 						return (0);
 					}
-					else
+					else if (!(a == 57 && b == 56 && c == 57 && d == 57))
 					{
 						putchar(',');
 						putchar(' ');
