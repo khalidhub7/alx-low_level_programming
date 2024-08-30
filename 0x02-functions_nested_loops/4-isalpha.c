@@ -7,9 +7,10 @@
  * Description: checks for alphabetic character.
  * @c: arg to check
  */
+
 int _isalpha(int c)
 {
-	if ((_islower(c)) || (c > 64 && c < 91))
+	if ((c > 96 && c < 123) || (c > 64 && c < 91))
 	{
 		return (1);
 	}
