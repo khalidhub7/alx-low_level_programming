@@ -28,7 +28,7 @@ int main(void)
 					if (a == 57 && b == 56 && c == 57 && c == 57)
 					{
 						putchar('\n');
-						break;
+						return (0);
 					}
 					else
 					{
@@ -41,4 +41,3 @@ int main(void)
 	}
 	return (0);
 }
-
