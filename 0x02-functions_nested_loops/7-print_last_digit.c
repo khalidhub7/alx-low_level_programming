@@ -12,7 +12,11 @@ int print_last_digit(int n)
 {
 	int last;
 
-	if (n < 0)
+	if (n == INT_MIN)
+	{
+		last = (INT_MIN % 10 + 10) % 10;
+	}
+	else if (n < 0)
 	{
 		last = (-n) % 10;
 	}
@@ -23,4 +27,3 @@ int print_last_digit(int n)
 	_putchar(last + '0');
 	return (last);
 }
-
