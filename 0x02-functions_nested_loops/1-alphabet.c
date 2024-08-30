@@ -5,15 +5,14 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i = 97;
 
 	while (i < 123)
 	{
-		putchar(i);
+		_putchar(i);
 		i++;
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
