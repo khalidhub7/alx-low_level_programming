@@ -7,28 +7,31 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int i = 48;
-	int j;
+	int a, b;
 
-	while (i < 57)
+	for (a = 48; a < 58; a++)
 	{
-		j = i + 1;
-		while (j < 58)
+		for (b = 49; b < 58; b++)
 		{
-			putchar(i);
-			putchar(j);
-			if (i != 56 || j != 57)
+			if (b > a && a != b)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(a);
+				putchar(b);
+				if (a == 56)
+				{
+					continue;
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			j++;
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
 }
+
