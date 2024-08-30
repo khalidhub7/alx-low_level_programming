@@ -7,33 +7,33 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int i = 48;
-	int j, k;
+	int a, b, c;
 
-	while (i < 57)
+	for (a = 48; a < 58; a++)
 	{
-		j = i + 1;
-		while (j < 58)
+		for (b = 49; b < 57; b++)
 		{
-			k = j + 1;
-			while (k < 58)
+			for (c = 49; c < 58; c++)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (i != 55 || j != 56 || k != 57)
+				if (b > a && a != b && b != c)
 				{
-					putchar(',');
-					putchar(' ');
-				}
-				k++;
+					putchar(a);
+					putchar(b);
+					putchar(c);
+					if (a == 55 && b == 56 && c == 57)
+					{
+						continue;
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 			}
-			j++;
+			}
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
