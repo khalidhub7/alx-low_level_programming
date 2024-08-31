@@ -1,43 +1,42 @@
+
+#include <stdio.h>
 #include "main.h"
 
-/**
- * add -  numbers
- *
- * Return: Always 0 (Success)
- * Description: prints all natural numbers from n to 98
- * @n: arg
+/*
+ * Task 11. 98 Battery Street, the OG
  */
+
+/**
+  * print_to_98 - Beginning/Starting point
+  *
+  * @n: Input Number or argument
+  *
+  * Objectif: Print all natural numbers from n to 98, followed by a new line
+  *
+  * Return: None
+  */
 
 void print_to_98(int n)
 {
-    if (n <= 98)
-    {
-        for (; n < 98; n++)
-        {
-            _putchar(n / 10 + '0');  /* Print the tens place */
-            _putchar(n % 10 + '0');  /* Print the units place */
-            if (n < 97)
-            {
-                _putchar(',');  /* Print comma */
-                _putchar(' ');  /* Print space */
-            }
-        }
-    }
-    else
-    {
-        for (; n > 98; n--)
-        {
-            _putchar(n / 100 + '0'); /* Print the hundreds place */
-            _putchar((n % 100) / 10 + '0');  /* Print the tens place */
-            _putchar(n % 10 + '0');  /* Print the units place */
-            if (n > 99)
-            {
-                _putchar(',');  /* Print comma */
-                _putchar(' ');  /* Print space */
-            }
-        }
-    }
-    _putchar('9');  /* Print 9 */
-    _putchar('8'); /* Print 8 */
-    _putchar('\n');  /* Print newline */
+	/* Count variable declaration */
+	int run;
+
+	if (n < 98)
+	{
+		for (run = n; run < 98; run++)
+		{
+			printf("%i, ", run);
+		}
+	}
+	else if (n > 98)
+	{
+		for (run = n; run > 98; run--)
+		{
+			printf("%i, ", run);
+		}
+	}
+	if (run == 98 || n == 98)
+	{
+		printf("98\n");
+	}
 }
