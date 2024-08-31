@@ -1,40 +1,43 @@
 #include "main.h"
-#include<stdio.h>
+
 /**
- * print_to_98 - Prints all natural numbers from n to 98.
- * @n: The starting number.
+ * add -  numbers
  *
- * Description: This function prints all the natural numbers from the starting
- *					number (n) up to 98.
+ * Return: Always 0 (Success)
+ * Description: prints all natural numbers from n to 98
+ * @n: arg
  */
+
 void print_to_98(int n)
 {
-	int i;
-
-	if (n < 98)
-	{
-		for (i = n; i <= 98; i++)
-		{
-			if (i != 98)
-		{
-			printf("%d, ", i);
-		}
-		else
-			printf("%d\n", i);
-		}
-	}
-	else if (n > 98)
-	{
-		for (i = n; i >= 98; i--)
-		{
-			if (i != 98)
-		{
-			printf("%d, ", i);
-		}
-		else
-			printf("%d\n", i);
-		}
-	}
-	else
-	printf("%d\n", n);
+    if (n <= 98)
+    {
+        for (; n < 98; n++)
+        {
+            _putchar(n / 10 + '0');  /* Print the tens place */
+            _putchar(n % 10 + '0');  /* Print the units place */
+            if (n < 97)
+            {
+                _putchar(',');  /* Print comma */
+                _putchar(' ');  /* Print space */
+            }
+        }
+    }
+    else
+    {
+        for (; n > 98; n--)
+        {
+            _putchar(n / 100 + '0'); /* Print the hundreds place */
+            _putchar((n % 100) / 10 + '0');  /* Print the tens place */
+            _putchar(n % 10 + '0');  /* Print the units place */
+            if (n > 99)
+            {
+                _putchar(',');  /* Print comma */
+                _putchar(' ');  /* Print space */
+            }
+        }
+    }
+    _putchar('9');  /* Print 9 */
+    _putchar('8'); /* Print 8 */
+    _putchar('\n');  /* Print newline */
 }
