@@ -16,6 +16,7 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
+void all_natural(void);
 char _putchar(char c);
 
 /* Function add to fix length */
