@@ -20,3 +20,14 @@ void all_natural(void)
 	printf("%d\n", result);
 }
 
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+all_natural();
+return (0);
+}
+
