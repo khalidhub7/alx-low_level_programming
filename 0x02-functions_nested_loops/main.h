@@ -17,4 +17,7 @@ int add(int, int);
 void print_to_98(int n);
 char _putchar(char c);
 
+/* func add to fix function len */
+void print_number(int);
+
 #endif
