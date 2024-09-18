@@ -17,6 +17,8 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 void all_natural(void);
+void fibonacci(int);
+void fibo_2(void);
 char _putchar(char c);
 
 /* Function add to fix length */
