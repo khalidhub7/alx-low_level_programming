@@ -1,35 +1,46 @@
 #include "main.h"
 
 /**
- * fibo_98 - first 98 Fibonacci nums
+ * fibo_98 - prints the first 98 Fibonacci numbers
  *
- * Return: Always 0
+ * Return: void
  */
 void fibo_98(void)
 {
-	unsigned long int a = 1, b = 2, sum;
-	int i = 0;
+	unsigned long int a1 = 1, b1 = 2, sum1;
+	unsigned long int a2 = 0, b2 = 0, sum2;
+	int i;
 
-	for (i = 0; i < 99; i++)
+	printf("%lu, %lu", a1, b1);
+
+	for (i = 2; i < 98; i++)
 	{
-		printf("%lu", a);
-		sum = a + b;
-		a = b;
-		b = sum;
-		if (i < 98)
+		sum1 = a1 + b1;
+		sum2 = a2 + b2;
+		while (sum1 < a1)
 		{
-			printf(", ");
+			sum2 += 1;
+			/* which is like 4,294,967,295 in 32-bit system */
+			sum1 += 4294967296UL;
 		}
+
+		a1 = b1;
+		a2 = b2;
+		b1 = sum1;
+		b2 = sum2;
+
+		if (a2 > 0)
+			printf(", %lu%018lu", b2, b1);
+		else
+			printf(", %lu", b1);
 	}
 	printf("\n");
 }
 
-#include "main.h"
-
 /**
- * main - check the code
+ * main - checks the code
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
