@@ -8,7 +8,7 @@
 void fibo_98(void)
 {
 	unsigned long int a1 = 1, b1 = 2, sum1 = 0;
-	unsigned long int a2 = 1, b2 = 2, sum2 = 0;
+	unsigned long int a2 = 0, b2 = 0, sum2 = 0;
 	int i;
 
 	printf("%lu, %lu", a1, b1);
