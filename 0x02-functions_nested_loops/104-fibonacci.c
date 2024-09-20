@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
  * fibo_98 - first 98 Fibonacci nums
  *
  * Return: void
  */
-
 void fibo_98(void)
 {
 	unsigned long int a1 = 1, b1 = 2, sum1 = 0;
@@ -32,6 +30,8 @@ void fibo_98(void)
 		else
 			printf(", %lu", b1);
 	}
+
+	printf(" ");
 	printf("\n");
 }
 /**
