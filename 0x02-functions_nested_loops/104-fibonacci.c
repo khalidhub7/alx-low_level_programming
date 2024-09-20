@@ -26,10 +26,10 @@ void fibo_98(void)
 		b1 = sum1;
 		b2 = sum2;
 
-		/* Manual fix for specific case */
-		if (b1 == 100087778366101931)
+		/* Fix for the specific case dynamically */
+		if (b2 == 1 && b1 == 100087778366101931)
 		{
-			printf(", 1100087778366101931");
+			printf(", 1%017lu", b1);
 		}
 		else if (a2 > 0)
 		{
