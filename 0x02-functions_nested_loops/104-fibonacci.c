@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * fibo_98 - first 98 Fibonacci nums
  *
@@ -30,10 +31,9 @@ void fibo_98(void)
 		else
 			printf(", %lu", b1);
 	}
-
-	printf(" ");
-	printf("\n");
+	printf(" \n");
 }
+
 /**
  * main - check the code
  *
