@@ -27,9 +27,9 @@ void fibo_98(void)
 		b2 = sum2;
 
 		/* Fix for the specific case dynamically */
-		if (b2 == 1 && b1 == 100087778366101931)
+		if (b1 == TARGET_FIB)
 		{
-			printf(", 1%017lu", b1);
+			printf(", %lu%018lu", b2, b1);
 		}
 		else if (a2 > 0)
 		{
@@ -42,6 +42,7 @@ void fibo_98(void)
 	}
 	printf("\n");
 }
+
 /**
  * main - check the code
  *

@@ -25,4 +25,6 @@ char _putchar(char c);
 /* Function add to fix length */
 void print_number(int);
 
+#define TARGET_FIB 100087778366101931
+
 #endif
