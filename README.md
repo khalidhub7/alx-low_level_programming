@@ -1,6 +1,6 @@
 # ALX Low-Level Programming 🖥️
 
-![Project Image](config/image.jpg)
+![Project Image](config/will-porada-DH5183gvKUg-unsplash.jpg)
 
 ## Description
 Studying C language and understanding programming basics.  
