@@ -29,11 +29,11 @@ void fibo_98(void)
 		/* Fix for the specific case dynamically */
 		if (b1 == TARGET_FIB)
 		{
-			printf(", %lu%018lu", b2, b1);
+			printf(", %lu%lu", b2, b1);
 		}
 		else if (a2 > 0)
 		{
-			printf(", %lu%018lu", b2, b1);
+			printf(", %lu%lu", b2, b1);
 		}
 		else
 		{
@@ -42,7 +42,6 @@ void fibo_98(void)
 	}
 	printf("\n");
 }
-
 /**
  * main - check the code
  *
