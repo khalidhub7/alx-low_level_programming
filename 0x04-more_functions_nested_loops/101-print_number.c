@@ -10,18 +10,20 @@ void print_number(int n)
 	{
 		_putchar('-');
 		_putchar('2');
-		print_number(147483648);
-		return;
+		_putchar('1');
+		print_number(47483648);
 	}
-
 	if (n < 0)
 	{
-		_putchar('-');
 		n = -n;
+		_putchar('-');
 	}
 
+	/* Recursion: add num to stack, prints digits in reverse order */
 	if (n / 10)
+	{
 		print_number(n / 10);
-
-	_putchar((n % 10) + '0');
+	}
+	_putchar(n % 10 + 48);
 }
+
