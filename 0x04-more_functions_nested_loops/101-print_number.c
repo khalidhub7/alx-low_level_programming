@@ -10,8 +10,7 @@ void print_number(int n)
 	{
 		_putchar('-');
 		_putchar('2');
-		_putchar('1');
-		print_number(47483648);
+		print_number(147483648);
 	}
 	if (n < 0)
 	{
@@ -26,4 +25,3 @@ void print_number(int n)
 	}
 	_putchar(n % 10 + 48);
 }
-
