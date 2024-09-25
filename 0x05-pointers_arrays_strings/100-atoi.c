@@ -18,7 +18,7 @@ int _atoi(char *s)
 			j++;
 		}
 		else if (s[j] == '+')
-            j++;
+			j++;
 		else
 			break;
 	}
@@ -26,7 +26,10 @@ int _atoi(char *s)
 	{
 		if (isdigit(s[i]))
 		{
-/* make room of other number hhh */
+			/* Handle overflow */
+			if (num > (2147483647 - (s[i] - '0')) / 10)
+				return (sign == 1 ? 2147483647 : -2147483648);
+			/* make room of other number hhh */
 			num = num * 10 + (s[i] - '0');
 			if (!isdigit(s[i + 1]))
 				break;
