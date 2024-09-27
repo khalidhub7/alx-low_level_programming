@@ -12,6 +12,7 @@ This repository contains various C projects as part of my learning journey.
 ## Tasks That Were Hard for Me 💡
 - [0x02-functions_nested_loops/104-fibonacci.c](0x02-functions_nested_loops/104-fibonacci.c) 🌀
 - [0x04-more_functions_nested_loops/100-prime_factor.c](0x04-more_functions_nested_loops/100-prime_factor.c) 🌀
+- [0x05-pointers_arrays_strings/101-keygen.c](0x05-pointers_arrays_strings/101-keygen.c) 🌀
 
 More challenging tasks to come... 💪
 
